@@ -1,0 +1,121 @@
+@font-face {
+  font-family: 'Figtree';
+  src: url('assets/fonts/static/Figtree-SemiBold.ttf') format('truetype');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Figtree';
+  src: url('assets/fonts/static/Figtree-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+}
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: #F4D04E;
+  margin: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Figtree";
+  font-weight: 500;
+
+}
+.blog_card{
+  max-width: 384px;
+  height: auto;
+  background-color: #FFFFFF;
+  border: 1px solid black;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 24px;
+  box-shadow: 8px 8px;
+}
+.blog_card:hover{
+  box-shadow: 16px 16px;
+  cursor: pointer;
+
+}
+.blog_card:hover .title{
+  color: #F4D04E;
+}
+
+.preview_img{
+  border-radius: 10px;
+  width: 100%;
+}
+.label{
+  background-color: #F4D04E;
+  font-size: 14px;
+  line-height: 150%;
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-weight: bold;
+  margin-top: 24px;
+  font-weight: 800;
+}
+.date{
+  font-size: 14px;
+  line-height: 150%;
+  margin-top: 12px;
+}
+.title{
+  font-size: 24px;
+  line-height: 150%;
+  margin-top: 12px;
+  font-weight: 800;
+}
+.description{
+  font-size: 16px;
+  color: #7f7f7f;
+  line-height: 150%;
+  margin-top: 12px;
+
+}
+.author{
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+}
+.author .avatar{
+  background:url("./assets/images/image-avatar.webp") no-repeat;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 12px;
+  background-size: cover;
+
+}
+.author .name{
+  font-size: 14px;  
+  line-height: 150%;
+  font-weight: 800;
+}
+.attribution{
+  position: absolute;
+  bottom: 8px;
+  font-size: 11px; text-align: center;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media screen and (max-width:640px) {
+  .blog_card{
+    max-width: 327px;
+  }
+  .label{
+    font-size: 12px;
+  }
+  .date{
+    font-size: 12px;
+  }
+  .title{
+    font-size: 20px;
+  }
+  .description{
+    font-size: 14px;}
+}
